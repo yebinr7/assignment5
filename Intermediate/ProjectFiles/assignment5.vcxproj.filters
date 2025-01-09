@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\assignment5.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\assignment5.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\assignment5Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\assignment5">
+      <UniqueIdentifier>{345BEC6E-BBAF-3D09-93C8-3185A7C3F7AB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\assignment5\assignment5.Build.cs">
+      <Filter>Source\assignment5</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\assignment5\assignment5.cpp">
+      <Filter>Source\assignment5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\assignment5\assignment5.h">
+      <Filter>Source\assignment5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\assignment5\MyActor.cpp">
+      <Filter>Source\assignment5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\assignment5\MyActor.h">
+      <Filter>Source\assignment5</Filter>
+    </ClCompile>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
