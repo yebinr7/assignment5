@@ -23,8 +23,11 @@ void AMyActor::BeginPlay()
 	//FVector CurrentLocation = GetActorLocation(); //FVector XYZ 좌표 
 	
 	//1. 엑터 시작 위치
-	_pos = {static_cast<uint8>(0.) , static_cast < uint8>(0.)};
-	UE_LOG(LogTemp, Warning, TEXT("_pos: %s\n"), *_pos.ToString());
+	_pos = {0., 0.};
+	//UE_LOG(LogTemp, Warning, TEXT("_pos: %s\n"), *_pos.ToString());
+	UE_LOG(LogTemp, Warning, TEXT("_pos: X=%d, Y=%d"),
+		static_cast<int32>(_pos.X),
+		static_cast<int32>(_pos.Y));
 }
 
 // Called every frame
@@ -39,9 +42,17 @@ void AMyActor::Tick(float DeltaTime)
 
 void AMyActor::RandomTenMove()
 {
-	
-	_pos = { _pos.X + Step(), _pos.Y + Step() };
-	UE_LOG(LogTemp, Warning, TEXT("time: %d, pos: %s\n"), _moveCount+1, *_pos.ToString()); //한글쓰면 오류?
+
+	_pos = { (_pos.X + Step()), (_pos.Y + Step()) };
+
+	//UE_LOG(LogTemp, Warning, TEXT("time: %d, pos: %s\n"), _moveCount+1, *_pos.ToString()); //한글쓰면 오류?
+
+	  // 정수로 변환하여 출력
+	UE_LOG(LogTemp, Warning, TEXT("time: %d, pos: X=%d, Y=%d"),
+		_moveCount + 1,
+		static_cast<int32>(_pos.X),
+		static_cast<int32>(_pos.Y)
+	);
 	_moveCount++;
 }
 
